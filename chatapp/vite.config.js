@@ -54,10 +54,10 @@ export default defineConfig(({ command, mode }) => {
       host: true,
       port: parseInt(env.PORT) || 3000,
       strictPort: true,
-      https: { // HTTPS設定を追加
-        key: fs.readFileSync("/etc/ssl/private.key"), // 秘密鍵のパス
-        cert: fs.readFileSync("/etc/ssl/certificate.crt") // 証明書のパス
-      }
+      // https: { // HTTPS設定を追加
+      //   key: fs.readFileSync("/etc/ssl/private.key"), // 秘密鍵のパス
+      //   cert: fs.readFileSync("/etc/ssl/certificate.crt") // 証明書のパス
+      // }
     }
   };
 });
